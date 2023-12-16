@@ -10,8 +10,13 @@ import utils.InputLoader;
 public class Day1Test {
     @Test
     public void day1Part1(){
-        List<String> inputs = InputLoader.readFromFile("inputs/day1/input.txt");
+        List<String> inputs = InputLoader.readFromFile("inputs/day1.txt");
         assertEquals(54916, Day1.part1(inputs));
+    }
+
+    @Test
+    public void day1Part2(){
+        List<String> inputs = InputLoader.readFromFile("inputs/day1.txt");
         assertEquals(54728, Day1.part2(inputs));
     }
 }

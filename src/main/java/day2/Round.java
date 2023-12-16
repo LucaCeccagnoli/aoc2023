@@ -1,28 +1,36 @@
-public class Round{
-    private Map<Balls, int> revealedBalls;
+package day2;
 
-    public Round(){
-        this.revealedBalls = new HashMap<>();
+import java.util.Map;
+
+public class Round{
+    private final Map<CubeColor, Integer> maxRevealedCubes;
+
+    public Round(Map<CubeColor, Integer> maxRevealedCubes){
+        this.maxRevealedCubes = maxRevealedCubes;
     }
 
-    public void reveal(Balls ballColor, int count){
-        if(revealedBalls.hasKey(ballColor)){
-            revealedBalls.set(ballColor, count);
+    public void reveal(CubeColor ballColor, int count){
+        if(maxRevealedCubes.containsKey(ballColor)){
+            this.maxRevealedCubes.put(ballColor,
+                    Math.max(count, maxRevealedCubes.get(ballColor)));
         } else {
-            revealedBalls.get(ballColor) += count;
+            this.maxRevealedCubes.put(ballColor, count);
         }
     }
 
-    public Map<Balls, int> getRevealedBalls(){
-        return this.revealedBalls;
+    public Map<CubeColor, Integer> getMaxRevealedCubes(){
+        return this.maxRevealedCubes;
     }
 
-    public boolean hasMoreBallsThan(Map<balls, int> balls){
-        return revealedBalls.keySet().stream()
-            .anyMatch( (color, revealedAmount) -> {
-                return balls.get(color) < revealedAmount;
-            })
-            ? true
-            : false
+    /**
+     * if more balls have been revealed during this round than are contained in the input bag
+     * @param bag bag of balls used for extraction
+     * @return
+     */
+    public boolean hasExtractedMoreBallsThanBag(Map<CubeColor, Integer> bag){
+        return maxRevealedCubes.keySet().stream()
+                .anyMatch( color -> {
+                    return maxRevealedCubes.get(color) > bag.get(color);
+                });
     }
 }
