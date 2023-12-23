@@ -1,0 +1,14 @@
+/home/lceccagnoli/dev/projects/advent_of_code/2023/csharp/bin/Debug/net7.0/csharp
+/home/lceccagnoli/dev/projects/advent_of_code/2023/csharp/bin/Debug/net7.0/csharp.deps.json
+/home/lceccagnoli/dev/projects/advent_of_code/2023/csharp/bin/Debug/net7.0/csharp.runtimeconfig.json
+/home/lceccagnoli/dev/projects/advent_of_code/2023/csharp/bin/Debug/net7.0/csharp.dll
+/home/lceccagnoli/dev/projects/advent_of_code/2023/csharp/bin/Debug/net7.0/csharp.pdb
+/home/lceccagnoli/dev/projects/advent_of_code/2023/csharp/obj/Debug/net7.0/csharp.GeneratedMSBuildEditorConfig.editorconfig
+/home/lceccagnoli/dev/projects/advent_of_code/2023/csharp/obj/Debug/net7.0/csharp.AssemblyInfoInputs.cache
+/home/lceccagnoli/dev/projects/advent_of_code/2023/csharp/obj/Debug/net7.0/csharp.AssemblyInfo.cs
+/home/lceccagnoli/dev/projects/advent_of_code/2023/csharp/obj/Debug/net7.0/csharp.csproj.CoreCompileInputs.cache
+/home/lceccagnoli/dev/projects/advent_of_code/2023/csharp/obj/Debug/net7.0/csharp.dll
+/home/lceccagnoli/dev/projects/advent_of_code/2023/csharp/obj/Debug/net7.0/refint/csharp.dll
+/home/lceccagnoli/dev/projects/advent_of_code/2023/csharp/obj/Debug/net7.0/csharp.pdb
+/home/lceccagnoli/dev/projects/advent_of_code/2023/csharp/obj/Debug/net7.0/csharp.genruntimeconfig.cache
+/home/lceccagnoli/dev/projects/advent_of_code/2023/csharp/obj/Debug/net7.0/ref/csharp.dll
