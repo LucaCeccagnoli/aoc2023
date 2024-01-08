@@ -7,7 +7,7 @@ public class Program
 {
     private static readonly Dictionary<int, Action> days = new()
     {
-        { 3, Day3.Run }
+        { 3, Day3.Run }, {4, Day4.Run}
     };
 
     public static void Main(string[] args)

@@ -1,4 +1,6 @@
-public class InputReader
+namespace AOC2023.Utils;
+
+public class InputUtils
 {
     public static List<string> readInput(string path)
     {

@@ -1,14 +1,10 @@
-using System.Diagnostics;
-using AOC2023.Day3;
-
-public interface Day{
-    abstract static void Run();
-}
+namespace AOC2023.Day3;
+using AOC2023.Utils;
 
 public class Day3 : Day
 {
     public static void Run(){
-        List<string> inputs = InputReader.readInput("inputs/day3.txt");
+        List<string> inputs = InputUtils.readInput("inputs/day3.txt");
         char[][] schematic = SchematicsParser.InputToMatrix(inputs);
         part1(schematic);
         part2(schematic);
